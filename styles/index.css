@@ -1,1 +1,97 @@
 @import url("./something.css");
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.dropdown a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .dropdown {
+  display: block;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.description img {
+  height: 200px;
+  margin-right: 20px;
+}
+
+.map-timetable {
+  display: flex;
+  margin: 20px;
+}
+
+.map-timetable iframe {
+  width: 50%;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.timetable {
+  width: 50%;
+}
+
+.timetable h3 {
+  margin: 0;
+}
+
+.timetable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timetable li {
+  margin-bottom: 10px;
+}
+
+.info-box {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.timetable li:hover .info-box,
+.timetable li:active .info-box {
+  display: block;
+}
