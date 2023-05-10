@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,5 +9,51 @@
 
     <link href="./styles/index.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <div class="navbar">
+      <div class="languages">
+        <a href="#">English</a>
+        <a href="#">Français</a>
+        <a href="#">Español</a>
+      </div>
+      <img src="logo.png" alt="Logo" />
+      <button type="button">Menu</button>
+    </div>
+  
+
+    <div class="description">
+      <img src="photo.jpg" alt="Photo" />
+      <p>This is a short description.</p>
+    </div>
+
+    <div class="map-timetable">
+      <iframe
+        title="map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14017.738679688775!2d-122.1238767!3d47.6694144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDQwJzEwLjciTiAxMjLCsDA3JzI2LjMiVw!5e0!3m2!1sen!2sus!4v1638216714408!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="timetable">
+        <h3>Timetable:</h3>
+        <ul>
+          <li>
+            9:00 AM - Location A
+            <div class="info-box">Information about Location A</div>
+          </li>
+          <li>
+            10:00 AM - Location B
+            <div class="info-box">Information about Location B</div>
+          </li>
+          <li>
+            11:00 AM - Location C
+            <div class="info-box">Information about Location C</div>
+          </li>
+          <li>
+            12:00 PM - Location D
+            <div class="info-box">Information about Location D</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
