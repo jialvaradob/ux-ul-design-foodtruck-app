@@ -10,6 +10,9 @@
     <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
+
+<!--Nav bar-->
+
     <div class="navbar">
       <div class="languages">
         <a href="#">English</a>
@@ -20,11 +23,13 @@
       <button type="button">Menu</button>
     </div>
   
-
+<!--Main section-->
     <div class="description">
       <img src="photo.jpg" alt="Photo" />
       <p>This is a short description.</p>
     </div>
+
+<!--Map with timetable-->
 
     <div class="map-timetable">
       <iframe
@@ -37,23 +42,114 @@
         <h3>Timetable:</h3>
         <ul>
           <li>
-            9:00 AM - Location A
-            <div class="info-box">Information about Location A</div>
+            <h2> 9:00 AM - 5:00 PM  Cluck Truck </h2>
+            <div class="info-box"> 
+            <p class = "info-box-title">  
+            The best chicken sandwiches in town! </p>
+        
+            <p class = "info-box-menu">
+          
+            Chicken sandwich with lettuce, tomato and mayo ($4.99)<br>
+            Spicy chicken sandwich with jalapeño, cheese and ranch ($5.99)<br>
+            Fries ($1.99)<br>
+            Chocolate cake ($2.99)<br>
+            Coke ($1.49)
+
+          </div>
           </li>
           <li>
-            10:00 AM - Location B
-            <div class="info-box">Information about Location B</div>
+            <h2> 10:00 AM -  6:00 PM Veggie Vibes </h2>
+            <div class="info-box"> 
+              <p class = "info-box-title">  
+                Delicious burgers that are good for you and the planet! </p>
+            
+                <p class = "info-box-menu">
+              
+                  Veggie burger with cheese, onion and ketchup ($3.99)<br>
+                  Mushroom burger with spinach, avocado and hummus ($4.99)<br>
+                  Onion rings ($1.99)<br>
+                  Sprite ($1.49)<br>
+                  Apple pie ($2.99)
+            </div>
+
+            <!--Checkboxes for the menu options, testing with first one.-->
+
+            <form>
+              <label><input type="checkbox" name="item1" value="Item1"> Item 1</label>
+              <label><input type="checkbox" name="item2" value="Item2"> Item 2</label>
+              <label><input type="checkbox" name="item3" value="Item3"> Item 3</label>
+              <br>
+              Comments: <br>
+              <textarea name="comments" rows="4" cols="50"></textarea><br><br>
+              <input type="submit" value="Submit">
+            </form> 
           </li>
           <li>
-            11:00 AM - Location C
-            <div class="info-box">Information about Location C</div>
+            <h2> 10:00 AM -  8:00 PM Sandwich Express </h2>
+            <div class="info-box"> 
+              <p class = "info-box-title">  
+                Fast and fresh sandwiches for any occasion! </p>
+            
+                <p class = "info-box-menu">
+              
+                  BLT sandwich with bacon, lettuce and tomato ($3.49)<br>
+                  Turkey sandwich with cranberry, cheese and mayo ($3.99)<br>
+                  Salad ($1.99)<br>
+                  Ice cream ($2.49)<br>
+                  Lemonade ($1.49)
+            </div>
           </li>
           <li>
-            12:00 PM - Location D
-            <div class="info-box">Information about Location D</div>
+            <h2> 11:00 AM -  5:00 PM  Snack Shack </h2>
+            <div class="info-box"> 
+              <p class = "info-box-title">  
+                Simple and satisfying snacks for your hunger! </p>
+            
+                <p class = "info-box-menu">
+              
+                  Ham and cheese sandwich with mustard ($2.99)<br>
+                  Tuna and egg sandwich with lettuce and mayo ($3.49)<br>
+                  Chips ($0.99)<br>
+                  Brownie ($1.99)<br>
+                  Water ($0.99)
+            </div>
           </li>
         </ul>
       </div>
     </div>
+
+    <div class="form-container">
+      <h2 class="form-title">Contact us</h2>
+      <p class="form-p">
+        If you have a Question or Complaint, don't hesitate to contact us.
+      </p>
+      <form class="form-fields">
+        <label class="fields-labels" for="full-name"> Full name </label>
+        <input class="fields-inputs" id="full-name" type="text" value="" />
+        <label class="fields-labels" for="email"> Email address </label>
+        <input class="fields-inputs" id="email" type="text" value="" />
+        <label class="fields-labels" for="message"> Messsage </label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          class="fields-textarea"
+        >
+        </textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    
+    <!--Footer-->
+
+    <footer>
+      <div class="footer-icons">
+        <a href="#"><img src="../public/facebook-logo.svg" alt="Facebook" /></a>
+        <a href="#"><img src="../public/twitter-logo.svg" alt="Twitter" /></a>
+        <a href="#"><img src="../public/github-logo.svg" alt="GitHub" /></a>
+        <a href="#"><img src="../public/linkedin-logo.svg" alt="LinkedIn" /></a>
+      </div>
+    </footer>
   </body>
 </html>
